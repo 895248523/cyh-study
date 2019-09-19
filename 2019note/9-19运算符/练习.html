@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="date" name="" id="d" value="" />
+	</body>
+	<script type="text/javascript">
+		/*var d = document.getElementById("d");
+		var nw = confirm("请问是女性顾客吗？");
+		nw==true?d.oninput=function(){d.value=="2019-03-08"?alert("今天妇女节,对所有女性顾客5折优惠"):alert("无优惠")}:alert("无优惠");
+		*/
+		/*var d = document.getElementById("d");
+		d.oninput=function(){
+			d.value=="2019-03-08"?(confirm("请问您是女性顾客吗?")==true?alert("今天妇女节,对所有女性顾客5折优惠"):alert("无优惠")):alert("无优惠");
+		}*/
+		var d = document.getElementById("d");
+		var nw = confirm("女王请点确定");//返回值肯定是布尔值
+		//现有一个事件才会有值;
+		d.oninput=function(){
+			var dv = d.value;//肯定返回一个字符串，并且格式为0000-00-00
+			var isdate = (dv =='2019-03-08');
+			if(nw && isdate){
+				alert("五折");
+			}else{
+				alert("无折扣");
+			}
+		}
+		
+	</script>
+</html>

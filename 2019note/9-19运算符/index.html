@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" name="btn" id="btn1" value="" placeholder="请输入您的年龄"/>
+		<input type="button" name="btn2" id="btn2" value="点击" />
+		<!--<6岁 白吃白喝 
+		80岁 以上5折-->
+		<script>
+			function my$(id){
+				return document.getElementById(id);
+			}
+			my$("btn2").onclick=function(){
+				var b1 = my$("btn1").value;
+				var b2 = my$("btn2");
+				if(b1<6){
+					alert("白吃白喝");
+				}else if(b1>80){
+					alert("打五折");
+				}else{
+					alert("正常价");
+				}
+			}
+			
+		</script>
+	</body>
+</html>
