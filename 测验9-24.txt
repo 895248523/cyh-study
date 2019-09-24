@@ -20,6 +20,9 @@ var div = document.getElementsByTagName[0];
 div.innerHTML="<a href='#'>去百度</a>"
 5.<div class="box red">,在css中box类设定了宽度和高度,red类设定了div的背景颜色.如何通过改变类名blue改变背景颜色,请写出代码?
 css代码
+.box{
+width:200px;
+height:200px;
 .red{
   background-color:red;
 }
