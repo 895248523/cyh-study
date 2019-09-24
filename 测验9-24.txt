@@ -30,8 +30,6 @@ height:200px;
 .blue{
   background-color::blue;
 }
-html代码
-<div id="div" class="red"></div>
 js代码
 var div=document.getElementById("div");
 div.className=" box blue";
