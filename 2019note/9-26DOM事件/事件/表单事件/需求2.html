@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<label for="txt">账号</label>
+		<input type="text" name="" id="txt" value="" />
+		<span id="tishi-text">
+			
+		</span>
+		<br />
+		<label for="pwd">密码</label>
+		<input type="password" name="pwd" id="pwd" value="" />
+		<span id="tishi-pwd">
+			
+		</span>
+		<br />
+		<label for="pwd1">确认密码</label>
+		<input type="password" name="pwd" id="pwd1" value="" />
+		<span id="tishi-pwd1">
+			
+		</span>
+		<br />
+		<input type="button" name="" id="btn" value="注册" />
+		<script type="text/javascript">
+			var txt = document.getElementById("txt");
+			var pwd = document.getElementById("pwd");
+			var pwd1 = document.getElementById("pwd1");
+			var btn = document.getElementById("btn");
+			var tt = document.getElementById("tishi-text");
+			var tpwd = document.getElementById("tishi-pwd");
+			var tpwd1 = document.getElementById("tishi-pwd1");
+			var yytxt = ["tom","jack","lili"]
+			txt.onblur=function(){
+				if(txt.value==""){
+					tt.innerHTML="账号不能为空";
+				}else{
+					tt.innerHTML="";
+				}
+			}
+			pwd.onblur=function(){
+				if(pwd.value==""){
+					tpwd.innerHTML="密码不能为空";
+				}else{
+					tpwd.innerHTML="";
+				}
+			}
+			pwd1.onblur=function(){
+				pwd1.value
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" name="in1" id="in1" value="" />
+		<script type="text/javascript">
+			var in1 = document.getElementById("in1");
+			in1.onfocus=function(){
+				in1.style.backgroundColor="red";
+			}
+			in1.onblur=function(){
+				in1.style.backgroundColor="";
+			}
+		</script>
+	</body>
+</html>

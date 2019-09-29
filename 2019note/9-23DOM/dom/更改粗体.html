@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h1 id="s">
+			这是一个span标签
+		</h1>
+		<script type="text/javascript">
+			var s = document.getElementById("s");
+			//s.tagName;
+			
+			//方法1：
+			//哪些标签是加粗的 h1~H6 B strong
+			if(s.tagName != 'H1'||s.tagName != 'H2'||s.tagName != 'H3'||s.tagName != 'H4'||s.tagName != 'H5'||s.tagName != 'H6'||s.tagName != 'B'||s.tagName != 'STRONG'){
+				s.style.fontWeight="400";
+			}
+			//方法二：
+			//不管是不是粗体,统一变为细体
+			s.style.fontWeight="400";
+			
+			//方法三:
+			var arr = ['H1','H2','H3','H4','H5','H6','B','STRONG'];
+			//检测数组里是否有粗体的标签名 ,返回-1以外的都是粗体/
+			var isTure = arr.indexOf(s.tagName);
+			//判断如是粗体标签名就改变样式
+			if(isTure!=-1){
+				s.style.fontWeight=200;
+				s.style.color="red";
+			}
+		</script>
+	</body>
+</html>

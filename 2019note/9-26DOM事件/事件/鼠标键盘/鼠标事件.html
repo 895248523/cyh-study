@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mydiv"></div>
+		<script type="text/javascript">
+			var mydiv = document.getElementById("mydiv");
+			//点击事件
+			mydiv.onclick=function(){}
+			//双击事件
+			mydiv.ondblclick=function(){
+				alert("双击事件");
+			}
+			//鼠标按下事件
+			mydiv.onmousedown=function(){
+				mydiv.innerHTML="按下事件";	
+			}
+			//鼠标抬起事件
+			mydiv.onmouseup=function(){
+				mydiv.innerHTML="";
+			}
+			//鼠标移动
+			//需要注意的是只要鼠标移动就会触发
+			document.onmousemove = function(){
+				console.log('移动了');
+			}
+			mydiv.onmousemove=function(){
+				console.log('div');
+			}
+			//鼠标移入
+			//会触发冒泡(从内逐级向外依次触发)
+			mydiv.onmouseover=function(){
+				alert("移入了");
+			}
+			document.body.onmouseover=function(){
+				console.log("aaa");
+			}
+			//鼠标移除
+			mydiv.onmouseout=function(){
+				alert("移出了");
+			}
+			//会触发多次,取决于嵌套和鼠标位置
+			document.body.onmouseout=function(){}
+			//鼠标移入，只能一次(没有事件冒泡这一说)
+			mydiv.onmouseenter=function(){}
+			//鼠标移入,只能一次（没有事件冒泡这一说）
+			mydiv.onmouseleave=function(){}
+		</script>
+	</body>
+</html>

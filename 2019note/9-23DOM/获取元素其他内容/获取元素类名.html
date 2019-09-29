@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.a{
+				width: 200px;
+				height: 200px;
+			}
+			.b{
+				background-color: red;
+			}
+			.c{
+				border-radius: 20px;
+			}
+			.d{
+				background-color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div" class="a b c">
+			asdasdasd
+		</div>
+		<script type="text/javascript">
+			var div = document.getElementById("div");
+			console.log(div.className);
+			div.className = "a c d";
+			console.log(div.className);
+		</script>
+	</body>
+</html>

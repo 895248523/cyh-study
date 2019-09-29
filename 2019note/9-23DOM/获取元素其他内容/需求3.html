@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.d{
+				width: 200px;
+				height: 200px;
+			}
+			.c{
+				background-color: red;
+			}
+			.b{
+				background-color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="d c" id="div">
+			
+		</div>
+		<input type="button" name="btn" id="btn" value="显示效果" />
+		<script type="text/javascript">
+			var div = document.getElementById("div");
+			var btn = document.getElementById("btn");
+			btn.onclick=function(){
+				div.className="d b";
+			}
+		/*	var timer = setInterval(function(){
+				if(div.className=="d c"){
+					div.className="d b";
+				}else{
+					div.className="d c";
+				}
+			},100)
+			document.getElementById("btn").onclick=function(){
+				clearInterval(timer);
+			}*/
+		</script>
+	</body>
+</html>

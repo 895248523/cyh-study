@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--
+			在table里面创建一行三列
+			
+		-->
+		<table>
+			
+		</table>
+		<script type="text/javascript">
+			var table = document.getElementsByTagName("table")[0];
+			for(var j=0;j<2;j++){
+				var tr = document.createElement("tr");
+				table.appendChild(tr);
+			}
+			var tr1 = table.children[0];
+			var tr2 = table.children[1];
+			for(var i=0;i<3;i++){
+				var td = document.createElement("td");
+				var td1 = document.createElement("td");
+				tr.appendChild(td);
+				tr.appendChild(td1);
+			}
+		</script>
+	</body>
+</html>

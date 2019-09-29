@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+			<div id="d">div</div>
+			<p id="p">p</p>
+			<h3 id="h">h3</h3>
+			<a href="#" id="a">a</a>
+			<span id="s">span</span>
+			<ul id="ul">123</ul>
+			<li id="li">123</li>
+			<i id="i">123</i>
+		<script type="text/javascript">
+			function my$(id){
+				return document.getElementById(id);
+			}
+			var d = my$("d");
+			var p = my$("p");
+			var h = my$("h");
+			var a = my$("a");
+			var s = my$("s");
+			var ul = my$("ul");
+			var li = my$("li");
+			var i = my$("i");
+			console.log(d);
+			console.log(p);
+			console.log(h);
+			console.log(a);
+			console.log(s);
+			console.log(ul);
+			console.log(li);
+			console.log(i);
+		</script>
+	</body>
+</html>

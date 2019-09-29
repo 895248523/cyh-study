@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			div{
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				margin:100px auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mydiv">
+			
+		</div>
+		<script type="text/javascript">
+			var mydiv = document.getElementById("mydiv");
+			console.log(mydiv.style);//这种方法只能拿到内联样式.
+			console.log(mydiv.offsetWidth);
+			
+			console.log(mydiv.offsetHeight);
+		</script>
+	</body>
+</html>
